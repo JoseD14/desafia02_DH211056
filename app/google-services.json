@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "907860298957",
+    "firebase_url": "https://desafio02-doradea-default-rtdb.firebaseio.com",
+    "project_id": "desafio02-doradea",
+    "storage_bucket": "desafio02-doradea.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907860298957:android:36edd67fb261568e0ead84",
+        "android_client_info": {
+          "package_name": "com.example.desafio02"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGGXVGkAlePm2XclawNgrNp-alje0us2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
