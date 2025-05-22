@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Desafio02</string>
+    <string-array name="estado_array">
+        <item>Pendiente</item>
+        <item>En curso</item>
+        <item>Completada</item>
+    </string-array>
+    <string-array name="dia_array">
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miercoles</item>
+        <item>Jueves</item>
+        <item>Viernes</item>
+        <item>Sábado</item>
+    </string-array>
+    <string-array name="hora_array">
+        <item>7:00 - 9:00 AM</item>
+        <item>9:00 - 11:00 AM</item>
+        <item>11:00 - 1:00 PM</item>
+        <item>1:00 - 3:00PM</item>
+        <item>3:00 - 5:00PM</item>
+        <item>5:00 - 7:00PM</item>
+    </string-array>
+
 </resources>

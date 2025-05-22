@@ -23,10 +23,10 @@ class Login : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         FirebaseApp.initializeApp(this)
         auth = FirebaseAuth.getInstance()
-        btnLogin = findViewById(R.id.btnLoginLogin)
+        btnLogin = findViewById(R.id.btnLogin)
         btnLogin.setOnClickListener{
-            val email = findViewById<EditText>(R.id.txtEmailLogin).text.toString()
-            val password = findViewById<EditText>(R.id.txtPasswordLogin).text.toString()
+            val email = findViewById<EditText>(R.id.editTextCarnetLogin).text.toString()
+            val password = findViewById<EditText>(R.id.editTextPasswordLogin).text.toString()
             if (email.isEmpty() || password.isEmpty()){
                 Toast.makeText(this,
                     "Se deben llenar los campos",
@@ -47,7 +47,7 @@ class Login : AppCompatActivity() {
         auth.signInWithEmailAndPassword(email,password)
             .addOnCompleteListener{ task ->
                 if(task.isSuccessful) {
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this, menu_principal::class.java)
                     startActivity(intent)
                     finish()
                 }

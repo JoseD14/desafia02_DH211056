@@ -1,0 +1,109 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A187E">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TÍTULO -->
+
+        <!-- CAMPOS DEL FORMULARIO -->
+        <TextView
+            android:id="@+id/textTituloPantalla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="Agregar Tarea"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Título de la actividad"
+            android:background="@drawable/edittext_background"
+            android:textColor="@android:color/white"
+            android:textColorHint="#BBBBBB"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etMateria"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Materia asociada"
+            android:background="@drawable/edittext_background"
+            android:textColor="@android:color/white"
+            android:textColorHint="#BBBBBB"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:inputType="text"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/etFecha"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Fecha de entrega"
+            android:background="@drawable/edittext_background"
+            android:textColor="@android:color/white"
+            android:textColorHint="#BBBBBB"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:inputType="text"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/etPrioridad"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Prioridad"
+            android:background="@drawable/edittext_background"
+            android:textColor="@android:color/white"
+            android:textColorHint="#BBBBBB"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:inputType="text"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/etNota"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Nota obtenida"
+            android:background="@drawable/edittext_background"
+            android:textColor="@android:color/white"
+            android:textColorHint="#BBBBBB"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="12dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerEstado"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_background"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginTop="12dp"
+            android:spinnerMode="dropdown"/>
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:text="Guardar"
+            android:backgroundTint="#3E3EAA"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</ScrollView>

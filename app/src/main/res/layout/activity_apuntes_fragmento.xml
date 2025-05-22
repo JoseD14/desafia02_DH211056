@@ -1,0 +1,37 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#1A187E"> <!-- Fondo azul -->
+
+    <TextView
+        android:id="@+id/txtApuntes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apuntes"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:layout_marginTop="80dp"/>
+
+
+    <Button
+        android:id="@+id/btnSubirApunte"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Subir Apunte"
+        android:backgroundTint="#3E3EAA"
+        android:textColor="#FFFFFF" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvApuntes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

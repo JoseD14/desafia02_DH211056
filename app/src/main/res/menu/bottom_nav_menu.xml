@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashboardFragment"
+        android:title="Home"
+        android:icon="@drawable/home_icon"/>
+    <item
+        android:id="@+id/materiasFragment"
+        android:title="Clases"
+        android:icon="@drawable/horarios_icon"/>
+    <item
+        android:id="@+id/tareasFragment"
+        android:title="Tareas"
+        android:icon="@drawable/tarea_icon"/>
+    <item
+        android:id="@+id/apuntesFragment"
+        android:title="Apuntes"
+        android:icon="@drawable/apuntes_icon"/>
+    <item
+        android:id="@+id/calendarioFragment"
+        android:title="Calendario"
+        android:icon="@drawable/calendario_icon"/>
+</menu>

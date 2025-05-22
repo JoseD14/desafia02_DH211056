@@ -1,0 +1,48 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.desafio02.DashBoardFragmento"
+        android:label="Home"/>
+
+    <fragment
+        android:id="@+id/materiasFragment"
+        android:name="com.example.desafio02.MateriasFragmento"
+        android:label="Materias" >
+        <action
+            android:id="@+id/action_materiasFragment_to_agregarmateriaFragment"
+            app:destination="@+id/agregarMateriaFragmento" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tareasFragment"
+        android:name="com.example.desafio02.TareasFragmento"
+        android:label="Tareas">
+        <action
+            android:id="@+id/action_tareasFragment_to_agregarTareaFragment"
+            app:destination="@id/agregarTareaFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/apuntesFragment"
+        android:name="com.example.desafio02.ApuntesFragmento"
+        android:label="Apuntes" />
+    <fragment
+        android:id="@+id/calendarioFragment"
+        android:name="com.example.desafio02.CalendarioFragmento"
+        android:label="Calendario" />
+    <fragment
+        android:id="@+id/agregarTareaFragment"
+        android:name="com.example.desafio02.AgregarTareaFragmento"
+        android:label="Agregar Tarea">
+
+    </fragment>
+    <fragment
+        android:id="@+id/agregarMateriaFragmento"
+        android:name="com.example.desafio02.AgregarMateriaFragmento"
+        android:label="Agregar Materia" />
+
+</navigation>

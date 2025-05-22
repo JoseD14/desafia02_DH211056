@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:orientation="vertical"
+    android:background="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvNombreMateria"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="?android:textColorPrimary"
+            tools:text="Título de la Asignatura" />
+
+        <ImageButton
+            android:id="@+id/btnEliminar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Eliminar"
+            android:padding="8dp"
+            android:src="@drawable/borrar_icon"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TableRow>
+            <TextView android:text="Código:" android:textStyle="bold"/>
+            <TextView android:id="@+id/tvCodigo" android:paddingStart="8dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Grupo:" android:textStyle="bold"/>
+            <TextView android:id="@+id/tvGrupo" android:paddingStart="8dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Día:" android:textStyle="bold"/>
+            <TextView android:id="@+id/tvDia" android:paddingStart="8dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Hora:" android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvHora"
+                android:paddingStart="8dp"
+                android:textColor="#FF5722"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Aula:" android:textStyle="bold"/>
+            <TextView android:id="@+id/tvUbicacion" android:paddingStart="8dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Docente:" android:textStyle="bold"/>
+            <TextView android:id="@+id/tvDocente" android:paddingStart="8dp"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
+
